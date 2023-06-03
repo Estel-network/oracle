@@ -1,0 +1,7 @@
+syntax = "proto3";
+package oracle.networking;
+
+option go_package = "oracle/x/networking/types";
+
+// Msg defines the Msg service.
+service Msg {}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package oracle.networking;
+
+option go_package = "oracle/x/networking/types";
+
+message NetworkingPacketData {
+    oneof packet {
+        NoData noData = 1;
+    }
+}
+
+message NoData {
+}
