@@ -1,0 +1,11 @@
+syntax = "proto3";
+package oracle.oracle;
+
+option go_package = "oracle/x/oracle/types";
+
+message Price {
+  string denom = 1; 
+  uint64 usd = 2; 
+  
+}
+

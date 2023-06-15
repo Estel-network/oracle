@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package oracle.oracle;
+
+option go_package = "oracle/x/oracle/types";
+
+// Msg defines the Msg service.
+service Msg {
+  rpc FeedPrice (MsgFeedPrice) returns (MsgFeedPriceResponse);
+}
+message MsgFeedPrice {
+  string creator = 1;
+  string denom   = 2;
+  string price   = 3;
+}
+
+message MsgFeedPriceResponse {
+  string response = 1;
+}
+

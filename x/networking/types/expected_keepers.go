@@ -9,6 +9,10 @@ type StakingKeeper interface {
 	// Methods imported from staking should be defined here
 }
 
+type OracleKeeper interface {
+	// Methods imported from oracle should be defined here
+}
+
 // AccountKeeper defines the expected account keeper used for simulations (noalias)
 type AccountKeeper interface {
 	GetAccount(ctx sdk.Context, addr sdk.AccAddress) types.AccountI
